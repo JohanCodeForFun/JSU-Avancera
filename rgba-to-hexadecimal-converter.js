@@ -18,5 +18,7 @@ function RGBAToHexA(r,g,b,a) {
     return "#" + r + g + b + a;
   }
 
+  GBAToHexA(0,0,0,0.9)
+
   // för att klara uppgift: ange,
   // GBAToHexA(0,0,0,0.9)
