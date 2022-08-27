@@ -1,13 +1,12 @@
-body {
-    background-color: #ccc;
-    color: #65432f;
-    font-size: 1.5em;
-
-}
-
-h1 {
-    background-color: lightskyblue;
-    transition: transform 2s;
-}
-
-h1:hover {transform: rotate(-.01turn)}
+.a {
+    color: red;
+    }
+  #b {
+    color: green;
+    }
+  .c {
+    color: blue;
+    }
+  .b {
+    color: orange;
+    }  
