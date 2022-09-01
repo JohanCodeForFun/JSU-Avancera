@@ -1,12 +1,4 @@
-.a {
-    color: red;
-    }
-  #b {
-    color: green;
-    }
-  .c {
-    color: blue;
-    }
-  .b {
-    color: orange;
-    }  
+@font-face {
+  font-family: MyFont;
+  src: url('Merriweather-Regular.ttf') format('truetype');
+}
