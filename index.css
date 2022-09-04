@@ -1,18 +1,13 @@
-@font-face {
-  font-family: MyFont;
-  src: url('Merriweather-Regular.ttf') format('truetype'),
-  url('webfont.ttf')  format('truetype');
-  font-weight: 300;
-  font-weight: 400;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #3d3d3d;
+    color: #ddddcd
+  }
 }
 
-@font-face {
-  font-family: MyFont;
-  src: url('gestareg-webfont.eot');
-  src: local('☺'), 
-       url('gestareg-webfont.woff') format('woff'), 
-       url('gestareg-webfont.ttf') format('truetype'), 
-       url('gestareg-webfont.svg#webfontg8dbVmxj') format('svg');
-       font-weight: 300;
-       font-weight: 400;
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ddddcd;
+    color: #3d3d3d;
+  }
 }
