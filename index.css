@@ -1,13 +1,6 @@
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #3d3d3d;
-    color: #ddddcd
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #ddddcd;
-    color: #3d3d3d;
-  }
+body {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
 }
