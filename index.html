@@ -2,12 +2,15 @@
 <html lang="sv">
   <head>
     <meta charset="utf-8">
-    <title>Positionering med namn</title>
-    <link href="index.css" rel="stylesheet">
+    <title>Flerradstextfält och placeholders</title>
+    <meta content="initial-scale=1, width=device-width" name="viewport">
   </head>
-  <body style="margin: 0; min-height: 100vh;">
-    <div id="first" style="background-color: #faa;">First</div>
-    <div id="second" style="background-color: #afa;">Second</div>
-    <div id="third" style="background-color: #aaf;">Third</div>
+  <body>
+    <form action="https://www.example.com/" method="GET">
+    <input name="user-name" placeholder="User name">
+    <textarea name="message" placeholder="Message" cols="40" rows="4">
+    </textarea>
+    <button><u>Send</u></button>
+    </form>
   </body>
 </html>
