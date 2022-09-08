@@ -283,6 +283,10 @@ body, html{
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     row-gap: 10vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 10vw;
+    height: auto;
 
     /* Grid area */
     grid-template-areas: 
@@ -311,5 +315,25 @@ body, html{
     color: var(--white);
 }
 
+#comment3 {
+    /* always declare what grid-area for #item */
+    grid-area: comment3;
+    border-radius: 8px;
+    background-color: var(--two);
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    color: var(--white);
+}
+
+#comment4 {
+    /* always declare what grid-area for #item */
+    grid-area: comment4;
+    border-radius: 8px;
+    background-image: url(/code-along/img/office-820390_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
