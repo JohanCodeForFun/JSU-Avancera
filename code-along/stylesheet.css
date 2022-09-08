@@ -351,20 +351,16 @@ body, html{
         grid-template-areas: 
         "comment1"
         "comment2"
-        "comment3"
-        "comment4";
+        "comment4"
+        "comment3";
      }
 
-     #comment1 {
+     #comment1,
+     #comment2,
+     #comment3,
+     #comment4
+      {
         height: 60vh;
-     }
-     #comment2 {
-        height: 60vh;
-     }
-     #comment3 {
-        height: 60vh;
-     }
-     #comment4 {
-        height: 60vh;
+        padding: 20px;
      }
 }
