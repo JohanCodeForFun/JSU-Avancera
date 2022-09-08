@@ -274,9 +274,42 @@ body, html{
 
 /*Validated Ok*/
 
+/* 6. Testimonial section */
+/* Grid */
 
+.testimonial-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    row-gap: 10vh;
 
+    /* Grid area */
+    grid-template-areas: 
+    "comment1 comment1 comment2 comment2"
+    "comment3 comment3 comment4 comment4";
+}
 
+#comment1 {
+    /* always declare what grid-area for #item */
+    grid-area: comment1;
+    border-radius: 8px;
+    background-image: url(/code-along/img/family.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#comment2 {
+    /* always declare what grid-area for #item */
+    grid-area: comment2;
+    border-radius: 8px;
+    background-color: var(--two);
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    color: var(--white);
+}
 
 
 
