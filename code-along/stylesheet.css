@@ -352,3 +352,23 @@ html {
     padding: 20px;
   }
 }
+
+/* 7. Slideshow */
+.slideshow-container {
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+    background-color: var(--white);
+    height: 90vh;
+}
+
+.slideshow-container img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border-radius: 10px;
+}
