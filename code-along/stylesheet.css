@@ -109,7 +109,7 @@ body, html {
 
 .navbar-links ul {
     display: flex;
-    margin-top: 2vh;
+    margin-top: 3vh;
     padding: 0;
 }
 
@@ -121,7 +121,66 @@ body, html {
 
     text-decoration: none;
     color: var(--white);
-    padding: 1rem;
+    padding: .5rem;
     margin: 2vw;
 }
 
+.navbar-links li:hover {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/* Only visible in responsive mode, handled by JavaScript */
+.toggle-button {
+    /* Set absolute position for hamburger menu */
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+/* Creating the bar style */
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10%;
+}
+
+/* Make the navbar responsive */
+@media screen and (max-width: 400px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .brand-title {
+        margin-top: 2vw;
+    }
+}
