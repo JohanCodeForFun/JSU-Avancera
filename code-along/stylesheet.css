@@ -1,186 +1,234 @@
-/* import google webfont Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+/*Importing Google web font roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Description
+/*Description
 1. Root settings
-2. Body html settings
+2. Body, html settings
 3. Buttons
 4. Navbar
-5. 
-6. 
-7.  
+5.
+6.
+7.
 */
 
-/* 1. Root settings */
-* {
-    font-family: roboto;
+/*1. Root settings*/
+*{
+font-family: roboto;
 
-    /* No invisibe borders, margin or paddings on the box */
-    box-sizing: border-box;
-
-    /* Declare the colors on the website */
+/*No invisble borders, margins or padding on the box*/
+box-sizing: border-box;
+/*Declare the colors on the website */
     --one: #026873;
-    --two: #0596A6;
-    --three: #03A6A6;
-    --four: #222d38;
-    --five: #DAD3C8;
-    --black: black;
-    --six: #726651;
-    --white: #ffffff;
-}
-/* validated above, ok! */
 
-/* 2. Body html settings  */
-body, html {
-    margin: 0;
-    padding: 0;
+    --two: #0596A6;
+
+    --three: #03A6A6;
+
+    --four: #222d38;
+
+    --five: #DAD3C8;
+
+    --black: black;
+
+    --six: #726651;
+
+    --white: #ffffff;
+
+}
+/*Above Validated 2022-09-08 10:33*/
+
+/*2. Body, html settings*/
+body, html{
+    /*Make it so that all space is stretched*/
+    margin:0;
+    padding:0;
+    /*no overflow*/
     overflow-x: hidden;
-    height: 100%;
+    height:100%;
+    /*Using my pre-decided colors using "var() function*/
     background-color: var(--five);
 }
 
+/*Above Validated 2022-09-08 10:53*/
 
-/* 3. Buttons */
-
+/*3. Buttons*/
 /*Button 1*/
-.btn {
 
+.btn {
     border: none;
+
     background-color:var(--six);
+    
+    /*Rounded edges on box/button*/
     border-radius:8px;
+
     display:inline-block;
+    /*Show visually that an element is clickable*/
     cursor:pointer;
+
     color:#ffffff;
+
     font-size:20px;
+
     font-weight:bold;
+
     padding:13px 32px;
-    text-decoration:none;
+
+    text-decoration:none;   
+
 }
+
+
+
 
 /*Button 2*/
+
 .btn2 {
+
     border: none;
+
     background-color:var(--black);
+
     border-radius:8px;
+
     display:inline-block;
+
     cursor:pointer;
+
     color:#ffffff;
+
     font-size:20px;
+
     font-weight:bold;
+
     padding:13px 32px;
+
     text-decoration:none;
+
 }
 
-/* Validated above */
+/*Above Validated 2022-09-08 11:02*/
 
-
-/* 4. Navbar */
-/* Navbar with flex */
-.navbar {
+/*4. Navbar*/
+/*Navbar with flex method*/
+.navbar{
     display: flex;
     justify-content: space-between;
-    height: 8vh;
+    height:8vh;
     width: 100%;
     position: fixed;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     background-color: var(--four);
-    /* Placing objects in order/layout */
-    z-index: 999;
-    top: 0;
-    left: 0;
+    /*Placing objects in order/layers*/
+    z-index:999;
+    top:0;
+    left:0;
     transition: 0.3s ease-in-out;
 }
 
-/* Logo/title settings */
-.brand-title {
-    font-size: 1.5rem;
-    color: var(--white);
-    font-weight: bold;
-    margin-left: 2vw;
+/*Logo/title settings*/
+.brand-title{
+ font-size: 1.5rem;
+ color:var(--white);
+ font-weight: bold;
+ margin-left: 2vw;
+ 
 }
 
-.navbar-links {
-    height: 100%;
-    background-color: var(--four);
+/*Clarify that the backround on the links is in the same color as the navbar itself*/
+.navbar-links{
+    height:100%;
+    background-color:var(four);
 }
 
-/* Adjusting the link settings */
+/*Adjusting the link settings*/
 
-.navbar-links ul {
-    display: flex;
+.navbar-links ul{
+    display:flex;
+    padding:0; 
     margin-top: 3vh;
-    padding: 0;
 }
 
-.navbar-links li {
+.navbar-links li{
     list-style: none;
 }
 
-.navbar-links li a {
-
+.navbar-links li a{
     text-decoration: none;
-    color: var(--white);
-    padding: .5rem;
-    margin: 2vw;
+    color:var(--white);
+    padding: 0.5rem;
+    margin:2vw;
 }
 
-.navbar-links li:hover {
-    font-weight: 900;
+.navbar-links li:hover{
     text-decoration: underline;
 }
 
-/* Only visible in responsive mode, handled by JavaScript */
-.toggle-button {
-    /* Set absolute position for hamburger menu */
+/*Only visible in responsive mode, handled by javascript*/
+.toggle-button{
+    /*The absolute means it will always be in the position that you have decided
+    therefore we need to use the top, right, bottom, left rule*/
     position: absolute;
     top: .75rem;
-    right: 1rem;
+    right:1rem;
+    /*Display none can be used everywhere and anytime but mostly when we
+    want an element to be shown at a certain pixel widht (responsive)*/
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px;
+    height:21px;
+
 }
 
-/* Creating the bar style */
-.toggle-button .bar {
-    height: 3px;
+/*Creating the bar style*/
+.toggle-button .bar{
+    height:3px;
     width: 100%;
     background-color: var(--white);
     border-radius: 10%;
+    
 }
 
-/* Make the navbar responsive */
-@media screen and (max-width: 400px) {
-    .navbar {
+/*Make the navbar responsive*/
+@media screen and (max-width: 400px){
+    .navbar{
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .toggle-button {
+    .toggle-button{
         display: flex;
     }
 
-    .navbar-links {
+    .navbar-links{
         display: none;
         width: 100%;
     }
 
-    .navbar-links ul {
+    .navbar-links ul{
         width: 100%;
         flex-direction: column;
     }
 
-    .navbar-links ul li {
+    .navbar-links ul li{
         text-align: center;
     }
 
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
+    .navbar-links ul li a{
+        padding: .05rem 1rem;
     }
 
-    .brand-title {
+    .navbar-links.active{
+        display: flex;
+        background-color: var(--four);
+    }
+
+    .brand-title{
         margin-top: 2vw;
     }
+
 }
+
+
