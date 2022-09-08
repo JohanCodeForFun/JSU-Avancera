@@ -7,8 +7,8 @@
 3. Buttons
 4. Navbar
 5. Hero Section (Hero image)
-6.
-7.
+6. Testimonial Section
+7. Slideshow
 */
 
 /*1. Root settings*/
@@ -264,41 +264,44 @@ html {
 
 /*Validated Ok*/
 
-/* 6. Testimonial section */
-/* Grid */
+/*6. Testimonial Section*/
+/*Grid*/
 
 .testimonial-grid-container {
+  /*Decide that this is a grid*/
   display: grid;
+  /*grid-template-columns*/
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*grid-template-rows*/
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   row-gap: 10vh;
   margin-right: 10vw;
   margin-left: 10vw;
-  margin-top: 10vw;
-  height: auto;
+  margin-top: 10vh;
+  height: 90vh;
 
-  /* Grid area */
+  /*Grid area*/
   grid-template-areas:
     "comment1 comment1 comment2 comment2"
     "comment3 comment3 comment4 comment4";
 }
 
 #comment1 {
-  /* always declare what grid-area for #item */
   grid-area: comment1;
   border-radius: 8px;
   background-image: url(/code-along/img/family.jpg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 #comment2 {
-  /* always declare what grid-area for #item */
+  /*Always declare what grid area you want the "#item" to be, in this example
+    it is the second column called comment2*/
   grid-area: comment2;
-  border-radius: 8px;
   background-color: var(--two);
+  border-radius: 8px;
   text-align: center;
   align-items: center;
   padding-top: 20px;
@@ -306,37 +309,40 @@ html {
 }
 
 #comment2 h2 {
-  margin-top: 2vh;
+  margin-top: 10vh;
 }
 
 #comment3 {
-  /* always declare what grid-area for #item */
+  /*Always declare what grid area you want the "#item" to be, in this example
+    it is the second column called comment2*/
   grid-area: comment3;
-  border-radius: 8px;
   background-color: var(--two);
+  border-radius: 8px;
   text-align: center;
   align-items: center;
   padding-top: 20px;
   color: var(--white);
 }
 
+#comment3 h2 {
+  margin-top: 10vh;
+}
+
 #comment4 {
-  /* always declare what grid-area for #item */
   grid-area: comment4;
   border-radius: 8px;
   background-image: url(/code-along/img/office-820390_1920.jpg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Making grid responsive */
+/*Making grid responsive*/
 @media screen and (max-width: 550px) {
   .testimonial-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 4fr;
     row-gap: 5vh;
-
     grid-template-areas:
       "comment1"
       "comment2"
@@ -348,27 +354,36 @@ html {
   #comment2,
   #comment3,
   #comment4 {
-    height: 80vh;
+    height: 70vh;
     padding: 20px;
   }
 }
 
-/* 7. Slideshow */
-.slideshow-container {
+/*7. Slideshow*/
+/*The container term is equal to a real container, inside you have all 
+elements or objects*/
+.slideshow-container{
     width: 80%;
     position: relative;
     justify-content: center;
-    margin: 0 auto;
-    margin-top: 5vh;
+    margin:0 auto;
+    margin-top:5vh;
     background-color: var(--white);
-    height: 90vh;
+    height:90vh;
+    border-radius: 10%;
 }
 
-.slideshow-container img {
+/*Adjusting the image to fit inside the above container*/
+.slideshow-container img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin:0 auto;
     padding: 50px 50px;
     border-radius: 10px;
+}
+
+/*Hiding the slides, and then showing them by JS code*/
+.mySlides{
+    display: none;
 }
