@@ -4,8 +4,8 @@
 /* Description
 1. Root settings
 2. Body html settings
-3. Navbar
-4. 
+3. Buttons
+4. Navbar
 5. 
 6. 
 7.  
@@ -29,4 +29,99 @@
     --white: #ffffff;
 }
 /* validated above, ok! */
+
+/* 2. Body html settings  */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: var(--five);
+}
+
+
+/* 3. Buttons */
+
+/*Button 1*/
+.btn {
+
+    border: none;
+    background-color:var(--six);
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+}
+
+/*Button 2*/
+.btn2 {
+    border: none;
+    background-color:var(--black);
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+}
+
+/* Validated above */
+
+
+/* 4. Navbar */
+/* Navbar with flex */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    margin: auto;
+    background-color: var(--four);
+    /* Placing objects in order/layout */
+    z-index: 999;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* Logo/title settings */
+.brand-title {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+.navbar-links {
+    height: 100%;
+    background-color: var(--four);
+}
+
+/* Adjusting the link settings */
+
+.navbar-links ul {
+    display: flex;
+    margin-top: 2vh;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+
+    text-decoration: none;
+    color: var(--white);
+    padding: 1rem;
+    margin: 2vw;
+}
 
