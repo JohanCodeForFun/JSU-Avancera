@@ -1,0 +1,12 @@
+body {
+    position: relative;
+}
+.square {
+    position: absolute;
+    transform: rotate(45deg);
+    top: -60px;
+    right: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
