@@ -37,7 +37,7 @@ footer {
 }
 
 h1 {
-    padding: 2rem;
+    padding: 1rem;
     color: antiquewhite;
     text-shadow: 2px 2px black;
 }
@@ -46,13 +46,13 @@ h1 {
 main,
 footer {
     background-color: antiquewhite;
-    padding: 2rem;
+    padding: 1rem;
 }
 header,
 main,
 footer {
     width: 60%;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: .5rem;
 }
 
