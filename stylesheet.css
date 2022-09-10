@@ -21,15 +21,43 @@ footer {
     justify-content: center;
     align-items: center;
 }
-body {
 
+.navbar-links ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    gap: .5rem;
 }
 
+.navbar-links ul li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 2rem;
+    color: antiquewhite;
+    text-shadow: 2px 2px black;
+}
+
+
+main,
+footer {
+    background-color: antiquewhite;
+    padding: 2rem;
+}
 header,
 main,
 footer {
-    width: 50%;
-    background-color: antiquewhite;
+    width: 60%;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+img {
+    border-radius: .5rem;
 }
 
 .hero-image {
@@ -38,13 +66,4 @@ footer {
     background-position: 50% 50%;
 }
 
-ul li {
-    display: inline;
-}
-
-/* .hero-image {
-    width: 50%;
-    background-image: url('beans.jpg');
-    margin-bottom: 520px;
-} */
-
+/* validated above, OK! */
