@@ -12,16 +12,39 @@ html {
     align-items: center;
     
 }
-body {
-    background-color: antiquewhite;;
+body,
+header,
+main,
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+body {
+
 }
 
 header,
 main,
 footer {
     width: 50%;
+    background-color: antiquewhite;
 }
+
+.hero-image {
+    height: 120px;
+    background-image: url('./beans.png');
+    background-position: 50% 50%;
+}
+
+ul li {
+    display: inline;
+}
+
+/* .hero-image {
+    width: 50%;
+    background-image: url('beans.jpg');
+    margin-bottom: 520px;
+} */
+
