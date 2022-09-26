@@ -1,1 +1,1 @@
-console.log("Hello World!", "Another string");
+let myVariable = "Min variabel"
