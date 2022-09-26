@@ -1,1 +1,1 @@
-let myVariable = "Min variabel"
+const first = 1, second = 2;
