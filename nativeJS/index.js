@@ -1,4 +1,1 @@
-// kommentar på en rad alert("Hello World!");
-
-/* kommentar på
- flera rader. */
+console.log("Hello World!");
