@@ -1,2 +1,3 @@
-let one = 1;
-let two = "2"
+let n = 4;
+let o = 12;
+let p = 4;
