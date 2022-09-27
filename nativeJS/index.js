@@ -1,3 +1,3 @@
-let n = 4;
-let o = 12;
-let p = 4;
+let age = prompt("Skriv in din ålder");
+age++;
+alert("Nästa gång du fyller år blir du " + age);
