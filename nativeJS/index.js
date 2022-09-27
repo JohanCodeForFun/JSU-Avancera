@@ -1,10 +1,7 @@
-// let number = 0;
+let input = prompt("ange nummer du vill ha alert ruta visas");
 
-// while (number < 3) {
-//     console.log(number);
-//     number++;
-// }
-
-for (i = 0; i < 3; i++) {
-    console.log(i);
+let number = 0;
+while (number < input) {
+    alert(number);
+    number++;
 }
