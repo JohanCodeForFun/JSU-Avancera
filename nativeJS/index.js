@@ -1,6 +1,8 @@
-let input = prompt ("Ange din ålder");
-if (input >= 18 ) {
-    alert("Vuxen");
+let userName = prompt("Ange användar namn");
+let password = prompt("ange lösenord");
+
+if (userName === "alice" && password === "secret") {
+    alert("Inloggad!");
 } else {
-    alert("Ungdom");
+    alert("Fel användarnamn eller lösenord!");
 }
