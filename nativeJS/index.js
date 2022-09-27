@@ -1,11 +1,10 @@
-let input = prompt("ange nummer du vill ha alert ruta visas");
-
-for (let i = 0; i < input; i++) {
-    alert(i);
+let input = prompt("skriv ett tal för att dra av moms");
+let moms = input * 0.8;
+if (!isNaN(input) && input > 0) {
+    alert(moms);
 }
-
-// let number = 0;
-// while (number < input) {
-//     alert(number);
-//     number++;
-// }
+else if (input === !null) {
+}
+else {
+    if (isNaN(input)) alert("Du skrev inte in ett nummer");
+}
