@@ -1,1 +1,1 @@
-let o = {one: "one", two: 2, three: true};
+let o = {"b":"a"};
