@@ -1,6 +1,6 @@
-let displayDialogBox = function () {
-    alert();
+let displayDialogBox = function (inputText) {
+    alert(inputText);
 }
 
-displayDialogBox();
-displayDialogBox();
+displayDialogBox("hello");
+displayDialogBox("world");
