@@ -1,7 +1,1 @@
-let numbers = [];
-let pushedNumber = 1;
-
-for (i = 0; i < 13; i++) {
-    numbers.push(pushedNumber);
-    pushedNumber++;
-}
+let a = [0, 5, -5, 0];
