@@ -1,6 +1,8 @@
-const greeting = function() {
-    return alert("Hello World!");
+const greeting = function(input) {
+    if (input === null || undefined) {
+        return;
+    } else {
+        return alert("Hello " + input +"!");
+    }
 }
 
-let s = greeting();
-alert(s);
