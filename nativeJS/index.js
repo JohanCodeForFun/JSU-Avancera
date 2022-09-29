@@ -1,9 +1,22 @@
-let a = [20, 10, 20];
+let input = prompt("ange nummer du vill ha alert ruta visas");
 
-a[0] = 2;
-// let index = 2;
-// tänk, att ha en variable, där jag berättar
-// index till arrayn a. Räkna därifrån.
+let number;
+if (input === null) {
+  let = 2;
+} else if (input === '') {
+    alert("Skriv in ett nummer");
+}
 
-// console.log(a[2] + a[1])
-// console.log(a[a[0]] + a[1] === 30)
+// while (number < input) {
+//     alert(number);
+//     number++;
+// }
+
+
+
+// let number = 0;
+
+// while (number < 3) {
+//     console.log(number);
+//     number++;
+// }
