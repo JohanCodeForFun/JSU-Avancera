@@ -1,13 +1,13 @@
-// lookup({ a: 1, b: 2, c: 3 }, 'b')
+//lookup({ a: 1, b: 2, c: 3 }, 'b')
 
-let lookup = function (object, key) {
-    let lookupResult = object.key;
-    console.log(lookupResult);
+let lookup = function (object, string) {
+  console.log(object[string]);
 }
 
-let lookupA = {
-    a: 1, b: 2, c: 3
-}
+// Test example,
+// let lookupA = {
+//     a: 1, b: 2, c: 3
+// }
 
-console.log(lookupA.b);
+// console.log(lookupA.b);
 
