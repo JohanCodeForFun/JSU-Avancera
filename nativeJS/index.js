@@ -1,4 +1,8 @@
-const difference = function(num1, num2) {
-    let differens = num1 - num2;
-    return differens;
+const factorial = function(num) {
+    let result = 1;
+    
+    for (let i = num; i > 0; i--) {
+        result *= i;
+    }
+    return result;
 }
