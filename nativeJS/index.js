@@ -1,3 +1,6 @@
-let greeting = function(input) {
-    return 'Hello ' + input + '!';
+let o = {
+    a: [1, 2, 3],
+    v: [1, 2],
+    w: [],
+    x: []
 }
