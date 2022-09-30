@@ -1,3 +1,3 @@
-let greeting = function() {
-    return 'Hello World!';
+let greeting = function(input) {
+    return 'Hello ' + input + '!';
 }
