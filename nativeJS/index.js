@@ -1,1 +1,3 @@
-let b = [[1, 2, 3]]; let c = [[4, 5]]; let a = b.concat(c);
+let greeting = function() {
+    return 'Hello World!';
+}
