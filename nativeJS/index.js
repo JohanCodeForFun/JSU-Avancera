@@ -1,14 +1,14 @@
-let firstNames = ["Richard", "Simon", "Arvid"];
+// object practice
+// Stockholm Jacket
 
-for (let i = 0; i < firstNames.length; i++) {
-    console.log(firstNames[i]);
+let product = {
+    name: "Stockholm Jacket",
+    sizes: ["s", "m", "l"],
+    price: 1299
 }
 
-let a = [1, 2, 3, 4, 5];
-a = [6, 7, 8, 9, 10]
-
-console.log(a);
-
-for (let i = 0; i < a.length; i++) {
-    console.log(a[i]);
-}
+// console.log(product);
+// console.log(product.name);
+console.log(product.sizes);
+console.log(product.sizes[1]);
+// console.log(product.price);
