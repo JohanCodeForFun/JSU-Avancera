@@ -1,3 +1,4 @@
-function greeting() {
-    return 'Hello World!'
+let f = () => {
+    alert();
+    return true;
 }
