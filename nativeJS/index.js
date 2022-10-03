@@ -1,4 +1,1 @@
-let f = () => {
-    alert();
-    return true;
-}
+let f = () => 0;
