@@ -5,12 +5,8 @@ let average = function(array) {
         return null;
     }
 
-    // for (let i = 0; i < array.length; i++) {
-    //     result += array[i];
-    // }
     array.forEach(function(item) {
     result += item;        
     });
-    // result /= array.length;
     return result / array.length;
 }
