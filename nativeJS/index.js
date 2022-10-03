@@ -1,14 +1,8 @@
-// object practice
-// Stockholm Jacket
-
-let product = {
-    name: "Stockholm Jacket",
-    sizes: ["s", "m", "l"],
-    price: 1299
+let sum = function(array) {
+    let result = 0;
+    
+    for (let i = 0; i < array.length; i++) {
+        result += array[i];
+    }
+    return result;
 }
-
-// console.log(product);
-// console.log(product.name);
-console.log(product.sizes);
-console.log(product.sizes[1]);
-// console.log(product.price);
