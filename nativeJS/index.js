@@ -1,1 +1,1 @@
-let f = () => 0;
+let f = number => [number];
