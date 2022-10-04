@@ -1,11 +1,9 @@
-// let arr = [1, 2, 3, 4, 5];
-
-let reverse = function(arr) {
-    let reverseArray = [];
-    for(let i = arr.length; i > 0; i--) {
-        reverseArray.push(arr[i-1]);
+let repeat = function(string, num) {
+    let repeatedString = [];
+    if (num > 0) {
+        for(let i = 0; i < num; i++) {
+            repeatedString.push(string);
+        }
+        return repeatedString;
     }
-    return reverseArray;
-};
-
-// reverse();
+}
