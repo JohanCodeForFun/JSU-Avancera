@@ -1,9 +1,11 @@
-let f = (k, l) => {
-    return {
-        k,
-        l
-    };
-}
+// let arr = [1, 2, 3, 4, 5];
 
-// let output = f("hello", "world");
-// console.log(output);
+let reverse = function(arr) {
+    let reverseArray = [];
+    for(let i = arr.length; i > 0; i--) {
+        reverseArray.push(arr[i-1]);
+    }
+    return reverseArray;
+};
+
+// reverse();
