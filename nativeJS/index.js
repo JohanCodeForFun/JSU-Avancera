@@ -1,9 +1,8 @@
-let repeat = function(string, num) {
-    let repeatedString = [];
-    if (num > 0) {
-        for(let i = 0; i < num; i++) {
-            repeatedString.push(string);
-        }
-        return repeatedString;
-    }
-}
+let sum = function (...numbers) {
+  let sumNumbers = 0;
+
+  for (const arg of numbers) {
+    sumNumbers += arg;
+  }
+  return sumNumbers;
+};
