@@ -1,4 +1,14 @@
-const prettyCard = function (suit, value) {
+let card = (value, suit) => {
+  return {
+    value,
+    suit
+  }
+}
+
+
+const prettyCard = function (card) {
+let suit = card.suit;
+let value = card.value;
 
   switch (value) {
     case 1:
@@ -63,20 +73,22 @@ const prettyCard = function (suit, value) {
       break;
   }
 
-  
-
   return value + suit
 }
 
 
 
-console.log(prettyCard('HEARTS', 1));
-console.log(prettyCard('SPADES', 2));
-console.log(prettyCard('DIAMONDS', 10));
-console.log(prettyCard('CLUBS', 11));
+// console.log(prettyCard('HEARTS', 1));
+// console.log(prettyCard('SPADES', 2));
+// console.log(prettyCard('DIAMONDS', 10));
+// console.log(prettyCard('CLUBS', 11));
 
 // test case,
 // console.log(prettyCard({ suit: 'HEARTS', value: 1 }), 'A♥')
 // console.log(prettyCard({ suit: 'SPADES', value: 2 }), '2♠')
 // console.log(prettyCard({ suit: 'DIAMONDS', value: 10 }), 'T♦')
-// console.log(prettyCard({ suit: 'CLUBS', value: 11 }), 'J♣')
+console.log(prettyCard({ suit: 'CLUBS', value: 11 }))
+console.log(prettyCard({ suit: 'HEARTS', value: 1 }))
+console.log(prettyCard({ suit: 'SPADES', value: 2 }))
+console.log(prettyCard({ suit: 'DIAMONDS', value: 10 }))
+console.log(prettyCard({ suit: 'CLUBS', value: 11 }))
