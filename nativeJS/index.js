@@ -11,7 +11,6 @@ for (let i = 0; i < suits.length; i++) {
 
 console.log(deck);
 
-
 // Learning experiences that made it possible to complete assignment:
 
 // return object: card, value & suit 
