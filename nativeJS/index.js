@@ -1,41 +1,29 @@
-const prettyCard = function (card) {
-  let suit, value
+let deck = [];
 
-  switch (suit) {
-    case 'HEARTS':
-      "&hearts";
-      break;
-    case 'SPADES':
-      "&spades";
-      break;
-    case 'DIAMONDS':
-      "&diams";
-      break;
-    case 'CLUBS':
-      "&clubs";
-      break;
-  
-    default:
-      break;
-  }
+let suits = ['HEARTS', 'SPADES', 'DIAMONDS', 'CLUBS'];
 
-  switch (value) {
-    case "A":
-      1
-      break;
-    case 2:
-      2
-      break;
-  
-    default:
-      break;
-  }
 
-  return value + suit
+// create push loop to fill hearts deck
+for (let i = 1; i <= 13; i++) {
+  deck.push({ suit: 'HEARTS', value: i })
 }
 
-// test case,
-// console.log(prettyCard({ suit: 'HEARTS', value: 1 }), 'A♥')
-// console.log(prettyCard({ suit: 'SPADES', value: 2 }), '2♠')
-// console.log(prettyCard({ suit: 'DIAMONDS', value: 10 }), 'T♦')
-// console.log(prettyCard({ suit: 'CLUBS', value: 11 }), 'J♣')
+// hearts.push({  })
+// hearts.push({ suit: 'HEARTS', value: 1 })
+
+// desired outcome:
+// let hearts = [
+//     { suit: 'HEARTS', value: 1 },
+//     { suit: 'HEARTS', value: 2 },
+//     { suit: 'HEARTS', value: 3 },
+//     { suit: 'HEARTS', value: 4 },
+//     { suit: 'HEARTS', value: 5 },
+//     { suit: 'HEARTS', value: 6 },
+//     { suit: 'HEARTS', value: 7 },
+//     { suit: 'HEARTS', value: 8 },
+//     { suit: 'HEARTS', value: 9 },
+//     { suit: 'HEARTS', value: 10 },
+//     { suit: 'HEARTS', value: 11 },
+//     { suit: 'HEARTS', value: 12 },
+//     { suit: 'HEARTS', value: 13 }
+// ];
