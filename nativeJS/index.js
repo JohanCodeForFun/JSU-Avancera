@@ -45,6 +45,20 @@ console.log(deck);
 // hearts.push({  })
 // hearts.push({ suit: 'HEARTS', value: 1 })
 
+// let deck = [];
+
+// let suits = ['HEARTS', 'SPADES', 'DIAMONDS', 'CLUBS'];
+
+
+// // create push loop to fill hearts deck
+// for (let i = 1; i <= 13; i++) {
+//   deck.push({ suit: 'HEARTS', value: i })
+// }
+
+// hearts.push({  })
+// hearts.push({ suit: 'HEARTS', value: 1 })
+
+
 // desired outcome:
 // let hearts = [
 //     { suit: 'HEARTS', value: 1 },
