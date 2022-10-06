@@ -1,9 +1,30 @@
 const prettyCard = function (card) {
   let suit, value
 
-  switch (key) {
-    case value:
-      
+  switch (suit) {
+    case 'HEARTS':
+      "&hearts";
+      break;
+    case 'SPADES':
+      "&spades";
+      break;
+    case 'DIAMONDS':
+      "&diams";
+      break;
+    case 'CLUBS':
+      "&clubs";
+      break;
+  
+    default:
+      break;
+  }
+
+  switch (value) {
+    case "A":
+      1
+      break;
+    case 2:
+      2
       break;
   
     default:
