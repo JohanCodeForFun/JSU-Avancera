@@ -1,15 +1,23 @@
-// build deck assignment
+'use strict';
+
+// Blackjack Logic, Function return a deck of cards
 let deck = [];
 
 let suits = ['HEARTS', 'SPADES', 'DIAMONDS', 'CLUBS']
 
-for (let i = 0; i < suits.length; i++) {
-  for (let j = 0; j < 13; j++) {
-    deck.push({ suit: suits[i], value: j + 1 })
+function createDeck() {
+  for (let i = 0; i < suits.length; i++) {
+    for (let j = 0; j < 13; j++) {
+      deck.push({ suit: suits[i], value: j + 1 })
+    }
   }
+  return deck;
 }
 
-console.log(deck);
+console.log(createDeck().length);
+console.log(createDeck().length);
+console.log(createDeck().length);
+
 
 // Learning experiences that made it possible to complete assignment:
 
