@@ -1,43 +1,87 @@
-// function to use as second paramater, 
-// for example: opening a prompt window.
+'use strict';
 
-const array1 = [1, 2, 3, 4, 5];
+// Blackjack Logic, Function return a deck of cards
 
-// loopa igenom med for loop
-// funktion 
-// få fram högsta värdet i arrayn
-// inne i loopen, if sats, 
-// // ta reda på när F är true
-// // när nyckeln i loopen är true, return true nyckel värde
-// returnera värdet
 
-function filter(value) {
-  console.log(array1.filter(value => value > 2));
+let suits = ['HEARTS', 'SPADES', 'DIAMONDS', 'CLUBS']
 
+function createDeck() {
+  let deck = [];
+  
+  for (let i = 0; i < suits.length; i++) {
+    for (let j = 0; j < 13; j++) {
+      deck.push({ suit: suits[i], value: j + 1 })
+    }
+  }
+  return deck;
 }
 
-filter(13);
+console.log(createDeck().length);
+console.log(createDeck().length);
+console.log(createDeck().length);
 
 
+// Learning experiences that made it possible to complete assignment:
 
-// let f = () => includes();
-// console.log(f([]))
+// return object: card, value & suit 
+// let card = (value, suit) => {
+//   return {
+//     value,
+//     suit
+//   }
+// }
 
-// function to go through an array and 
-// propmt user with the values.
-function forEach(a, f) {
-  for (let i = 0; i < a.length; i++) {
-    f((a[i]));
-  }
-};
+// console.log(card(2, 3));
 
-// forEach([1, 2, 3, 4, 5], console.log);
 
-// old way
-// let f = function() {
-//   return g;
-// };
+//push hearths cards into array
+// let hearts = [];
 
-// let g = function() {
-//   return 'Hello World!'
-// };
+// // create push loop to fill hearts deck
+// for (let i = 1; i <= 13; i++) {
+//   hearts.push({ suit: 'HEARTS', value: i })
+// }
+
+// console.log(hearts);
+
+
+// create push loop to fill deck of cards
+// for (let i = 0; i < suits.length; i++) {
+//   for (let j = 1; i < 13; j++) {
+//   deck.push({ suit: suits[i], value: i })
+//   }
+// }
+
+// hearts.push({  })
+// hearts.push({ suit: 'HEARTS', value: 1 })
+
+// let deck = [];
+
+// let suits = ['HEARTS', 'SPADES', 'DIAMONDS', 'CLUBS'];
+
+
+// // create push loop to fill hearts deck
+// for (let i = 1; i <= 13; i++) {
+//   deck.push({ suit: 'HEARTS', value: i })
+// }
+
+// hearts.push({  })
+// hearts.push({ suit: 'HEARTS', value: 1 })
+
+
+// desired outcome:
+// let hearts = [
+//     { suit: 'HEARTS', value: 1 },
+//     { suit: 'HEARTS', value: 2 },
+//     { suit: 'HEARTS', value: 3 },
+//     { suit: 'HEARTS', value: 4 },
+//     { suit: 'HEARTS', value: 5 },
+//     { suit: 'HEARTS', value: 6 },
+//     { suit: 'HEARTS', value: 7 },
+//     { suit: 'HEARTS', value: 8 },
+//     { suit: 'HEARTS', value: 9 },
+//     { suit: 'HEARTS', value: 10 },
+//     { suit: 'HEARTS', value: 11 },
+//     { suit: 'HEARTS', value: 12 },
+//     { suit: 'HEARTS', value: 13 }
+// ];
