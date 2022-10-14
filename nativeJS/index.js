@@ -1,5 +1,12 @@
-fetch('https://avancera.app/cities/4787e794-b3ac-4a63-bba0-03203f78e553')
+fetch("https://programming-quotes-api.herokuapp.com/quotes/random")
   .then(response => response.json())
-  .then(result => {
-    console.log(result)
-  })
+  .then(data => {
+    let content = '';
+    
+      content += `
+      <p class="randomQoute"><em>"${data.en}"</em></p>
+      <p class="author"><em>-${data.author}</em></p>
+      `;
+      document.querySelector("#qoutes").innerHTML = content;
+
+  });
