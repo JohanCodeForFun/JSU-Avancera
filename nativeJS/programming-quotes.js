@@ -4,17 +4,17 @@ fetch("https://programming-quotes-api.herokuapp.com/quotes/random")
     let content = "";
 
     content += `
-      <p class="randomQoute"><em>"${data.en}"</em></p>
+      <p class="randomQuotes"><em>"${data.en}"</em></p>
       <p class="author"><em>-${data.author}</em></p>
       `;
     document.querySelector("#quotes").innerHTML = content;
   });
 
-// FETCH Programming Qoutes
+// FETCH Programming quotess
 // How to install:
-// 1) Add <div id="qoutes"></div> to your index.html.
-// 2) Add <script src="programming-qoutes.js" defer></script> inside head or body tag.
-// 3) Add programming-qoutes.js to your main folder.
+// 1) Add <div id="quotes"></div> to your index.html.
+// 2) Add <script src="programming-quotess.js" defer></script> inside head or body tag.
+// 3) Add programming-quotess.js to your main folder.
 // 4) Enjoy!
 //
 // Qoutes from, https://github.com/skolakoda/programming-quotes-api
