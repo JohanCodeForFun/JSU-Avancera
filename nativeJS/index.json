@@ -1,4 +1,20 @@
-{
+[
+  {
     "userName": "Bob",
-    "password": "secret"
-}
+    "password": "secret",
+    "smart": true,
+    "Hur smart?": 9000
+  },
+  {
+    "userName": "Bob",
+    "password": "secret",
+    "smart": true,
+    "Hur smart?": 9000
+  },
+  {
+    "userName": "Bob",
+    "password": "secret",
+    "smart": true,
+    "Hur smart?": 9000
+  }
+]
