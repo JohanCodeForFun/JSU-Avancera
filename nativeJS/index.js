@@ -1,13 +1,8 @@
-let promise = fetch('https://avancera.app/cities/');
+let inputID = prompt();
+console.log(inputID);
 
-promise
-  .then(response => {
-    console.log(response)
-
-    let someOtherPromise = response.json();
-
-    return someOtherPromise
-  })
+let promise = fetch(`https://avancera.app/cities/${inputID}`)
+  .then(response => response.json())
   .then(result => {
     console.log(result)
   });
