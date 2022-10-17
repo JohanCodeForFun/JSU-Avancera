@@ -1,17 +1,14 @@
 let getCityId = prompt("Ange ID för den stad du vill uppdatera")
-let createCity = prompt("lägg till en stad");
-let setPopulation = Number(prompt("Läggg till befolkningsmängd"));
+let changeName = prompt("Ange nytt namn för staden");
 
-fetch(`https://avancera.app/cities/${getCityId}`, {
-  body: `{ 
-    "id": "${getCityId}",
-    "name": "${createCity}", 
-    "population": ${setPopulation} 
-  }`,
+fetch('https://avancera.app/cities/' + getCityId, {
+  body: JSON.stringify({
+    "name": changeName, 
+  }),
   headers: {
-    'Content-type': 'application/json'
+    'Content-Type': 'application/json'
   },
-  method: 'PUT'
+  method: 'PATCH',
 })
   .then(result => {
     console.log(result)
