@@ -1,14 +1,18 @@
+let getCityId = prompt("Ange ID för den stad du vill uppdatera")
 let createCity = prompt("lägg till en stad");
 let setPopulation = Number(prompt("Läggg till befolkningsmängd"));
 
-fetch('https://avancera.app/cities/', {
-  body: `{ "name": "${createCity}", "population": ${setPopulation} }`,
+fetch(`https://avancera.app/cities/${getCityId}`, {
+  body: `{ 
+    "id": "${getCityId}",
+    "name": "${createCity}", 
+    "population": ${setPopulation} 
+  }`,
   headers: {
     'Content-type': 'application/json'
   },
-  method: 'POST'
+  method: 'PUT'
 })
-  .then(response => response.json())
   .then(result => {
     console.log(result)
   });
