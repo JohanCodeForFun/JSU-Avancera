@@ -1,37 +1,10 @@
-let getCityId = prompt("Ange ID för den stad du vill uppdatera");
-let changeName = prompt("Ändra namn för staden");
-let changePopulation = Number(prompt("Uppdatera befolkningsmängd"));
+let element = document.querySelector('#some-element')
+console.log(element.children) // Barnelement
+console.log(element.childNodes) // Barnnoder
 
-if (getCityId !== null || getCityId !== undefined || getCityId !== "") {
-  console.log("inside first if");
+// let parapgraphs = document.querySelectorAll('p');
+// console.log(parapgraphs);
 
-  if (changeName === null || changeName === undefined) {
-    console.log("uppdatera befolkning prompt");
-
-    if (changePopulation === null || changePopulation === undefined) {
-      console.log("byt namn prompt");
-    }
-
-    // } else if (changePopulation === null || changePopulation === undefined) {
-  // } else if (){
-  //   console.log("Updatera namn och befolkning");
-  
-  } else { {
-    console.log("byt namn & stad prompt");
-  }
-}}
-
-
-// fetch('https://avancera.app/cities/' + getCityId, {
-//   body: JSON.stringify({
-//     "name": changeName,
-//     "population": changePopulation
-//   }),
-//   headers: {
-//     'Content-Type': 'application/json'
-//   },
-//   method: 'PATCH',
-// })
-//   .then(result => {
-//     console.log(result)
-//   });
+// for (let i = 0; i < parapgraphs.length; i++ ) {
+//   console.log(parapgraphs[i])
+// }
