@@ -1,5 +1,5 @@
-let item = document.getElementById("players");
-let items = document.getElementsByTagName("li");
+let items = document.querySelectorAll("li");
 
-console.log(item);
-console.log(items);
+for (let i = 0; i < items.length; i++) {
+  console.log(items[i]);
+}
