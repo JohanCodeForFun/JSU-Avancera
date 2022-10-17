@@ -1,2 +1,5 @@
-let items = document.querySelectorAll("li");
-let item = document.querySelector("#players"); 
+let item = document.getElementById("players");
+let items = document.getElementsByTagName("li");
+
+console.log(item);
+console.log(items);
