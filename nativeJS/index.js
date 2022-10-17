@@ -1,5 +1,5 @@
-let items = document.querySelectorAll("li");
+// let items = document.querySelector("ol");
 
-for (let i = 0; i < items.length; i++) {
-  console.log(items[i]);
+for (const child of ol.children) {
+  console.log(child);
 }
