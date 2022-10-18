@@ -1,5 +1,2 @@
-// let items = document.querySelector("ol");
-
-for (const child of ol.children) {
-  console.log(child);
-}
+let element = document.querySelector('h1');
+element.textContent = "Hello World!"
