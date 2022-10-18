@@ -1,2 +1,4 @@
-let element = document.querySelector('h1'); 
-element.innerHTML = "Hello <u>World</u>!";
+// <ol type="i">
+
+let element = document.querySelector('ol');
+element.setAttribute("type", "i");
