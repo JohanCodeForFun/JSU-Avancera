@@ -1,3 +1,6 @@
-let element = document.querySelector('ol');
-let elementLastChild = element.lastElementChild
-elementLastChild.style.color = "#c00";
+let list = document.querySelectorAll('li');
+
+for (const item of list) {
+  item.innerHTML += '<span class="credits">100 credits</span>'
+  console.log(item);
+}
