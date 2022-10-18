@@ -1,4 +1,3 @@
-// <ol type="i">
-
 let element = document.querySelector('ol');
-element.setAttribute("type", "i");
+let elementLastChild = element.lastElementChild
+elementLastChild.style.color = "#c00";
