@@ -1,6 +1,10 @@
-const ol = document.querySelector('ol');
-ol.removeChild(ol.children[1]);
+const parent = document.querySelector('ol');
 
-// let removeNode = liElement[1].removeChild(liElement);
-// console.log(liElement[1]);
-// // liElement.forEach(item => console.log(item));
+const lastChildNode = parent.children[parent.children.length-1]
+const listNode = document.createElement("li");
+
+const textNode = document.createTextNode("Dennis");
+
+parent.appendChild(listNode);
+listNode.appendChild(textNode);
+parent.insertBefore(listNode, lastChildNode);
