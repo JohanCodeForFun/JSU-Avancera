@@ -1,6 +1,6 @@
-const node = document.createElement("li");
-const textNode = document.createTextNode("Dennis");
-const ol2 = document.querySelector('ol');
+const ol = document.querySelector('ol');
+ol.removeChild(ol.children[1]);
 
-node.appendChild(textNode);
-ol2.appendChild(node);
+// let removeNode = liElement[1].removeChild(liElement);
+// console.log(liElement[1]);
+// // liElement.forEach(item => console.log(item));
