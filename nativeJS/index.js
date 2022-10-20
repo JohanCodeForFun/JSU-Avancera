@@ -1,5 +1,6 @@
-let h1 = document.createElement('H1');
-let textNode = document.createTextNode("Hello World!");
-document.body.appendChild(h1);
-h1.appendChild(textNode);
-// body > h1:nth-child(6)
+const node = document.createElement("li");
+const textNode = document.createTextNode("Dennis");
+const ol2 = document.querySelector('ol');
+
+node.appendChild(textNode);
+ol2.appendChild(node);
