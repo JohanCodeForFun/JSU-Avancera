@@ -1,9 +1,6 @@
 // Modul: Events och addEventListener
 
-addEventListener("DOMContentLoaded", () => {
-
-  const btn = document.querySelector("#button");
-  btn.addEventListener("click", () => {
-    console.log("click");
-  });
+// const body1 = document.body;
+addEventListener('click', () => {
+  console.log(event.pageX);
 });
