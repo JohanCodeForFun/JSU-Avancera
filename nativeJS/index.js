@@ -1,4 +1,4 @@
 // Modul: Events och addEventListener
 
-const btn = document.querySelector('#button');
-btn.addEventListener('click', () => console.log('click'));
+const div = document.querySelector('#hover-area');
+div.addEventListener('mousemove', () => console.log('click'));
