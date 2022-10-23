@@ -9,49 +9,71 @@ if (getCityId !== null) {
   console.log(updateName);
 
   if (updateName === null) {
+    // CORRECT
     updatePopulation = Number(prompt("Ange ny befolkningsmängd"));
     console.log(updatePopulation);
 
     fetch("https://avancera.app/cities/" + getCityId, {
       body: JSON.stringify({
-        id: getCityId,
-        // name: updateName,
-        population: Number(updatePopulation),
+        population: updatePopulation,
       }),
       headers: {
         "Content-type": "application/json",
       },
-      method: "PUT",
-    })
-    .then((response) => response.json())
-    .then((result) => {
-      console.log(result)
-    });
-
-  }
-
-  if (updateName !== null) {
-    updatePopulation = prompt("Ange ny befolkningsmängd");
-    console.log(updatePopulation);
-
-    fetch("https://avancera.app/cities/" + getCityId, {
-      body: JSON.stringify({
-        id: getCityId,
-        name: updateName,
-        population: Number(updatePopulation),
-      }),
-      headers: {
-        "Content-type": "application/json",
-      },
-      method: "PUT",
+      method: "PATCH",
     })
       .then((response) => response.json())
       .then((result) => {
-        console.log(result)
+        console.log(result);
       })
-      .catch(error => {
-        console.log(error)
+      .catch((error) => {
+        console.log(error);
       });
+  }
+
+  if (updateName !== null) {
+    if (updatePopulation === null) {
+      // work on this
+      console.log("om namn är i fyltt, och pop = 0");
+      fetch("https://avancera.app/cities/" + getCityId, {
+        body: JSON.stringify({
+          name: updateName,
+        }),
+        headers: {
+          "Content-type": "application/json",
+        },
+        method: "PATCH",
+      })
+        .then((response) => response.json())
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      // CORRECT
+      updatePopulation = prompt("Ange ny befolkningsmängd");
+      console.log(updatePopulation);
+
+      fetch("https://avancera.app/cities/" + getCityId, {
+        body: JSON.stringify({
+          name: updateName,
+          population: Number(updatePopulation),
+        }),
+        headers: {
+          "Content-type": "application/json",
+        },
+        method: "PATCH",
+      })
+        .then((response) => response.json())
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   }
 }
 
@@ -61,3 +83,68 @@ fetch("https://avancera.app/cities/")
     console.log(result);
     console.log(result.id);
   });
+
+
+// let getCityId = prompt("Skriv in city id");
+// let updateName;
+// let updatePopulation;
+
+// console.log(getCityId);
+
+// if (getCityId !== null) {
+//   updateName = prompt(`Ange nytt namn till _____`); // ${id.stad}
+//   console.log(updateName);
+
+//   if (updateName === null) {
+//     updatePopulation = Number(prompt("Ange ny befolkningsmängd"));
+//     console.log(updatePopulation);
+
+//     fetch("https://avancera.app/cities/" + getCityId, {
+//       body: JSON.stringify({
+//         id: getCityId,
+//         // name: updateName,
+//         population: Number(updatePopulation),
+//       }),
+//       headers: {
+//         "Content-type": "application/json",
+//       },
+//       method: "PUT",
+//     })
+//     .then((response) => response.json())
+//     .then((result) => {
+//       console.log(result)
+//     });
+
+//   }
+
+//   if (updateName !== null) {
+//     updatePopulation = prompt("Ange ny befolkningsmängd");
+//     console.log(updatePopulation);
+
+//     fetch("https://avancera.app/cities/" + getCityId, {
+//       body: JSON.stringify({
+//         id: getCityId,
+//         name: updateName,
+//         population: Number(updatePopulation),
+//       }),
+//       headers: {
+//         "Content-type": "application/json",
+//       },
+//       method: "PUT",
+//     })
+//       .then((response) => response.json())
+//       .then((result) => {
+//         console.log(result)
+//       })
+//       .catch(error => {
+//         console.log(error)
+//       });
+//   }
+// }
+
+// fetch("https://avancera.app/cities/")
+//   .then((response) => response.json())
+//   .then((result) => {
+//     console.log(result);
+//     console.log(result.id);
+//   });
