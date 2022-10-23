@@ -1,49 +1,63 @@
-// Modul: "Global" Events och addEventListener
+let getCityId = prompt("Skriv in city id");
+let updateName;
+let updatePopulation;
 
-addEventListener("keydown", () => {
-  if (event.keyCode === 38) {
-    valueSum++;
-    value.textContent = valueSum;
-    if (valueSum > 1) {
-      decreaseBtn.disabled = false;
-    }
+console.log(getCityId);
+
+if (getCityId !== null) {
+  updateName = prompt(`Ange nytt namn till _____`); // ${id.stad}
+  console.log(updateName);
+
+  if (updateName === null) {
+    updatePopulation = Number(prompt("Ange ny befolkningsmängd"));
+    console.log(updatePopulation);
+
+    fetch("https://avancera.app/cities/" + getCityId, {
+      body: JSON.stringify({
+        id: getCityId,
+        // name: updateName,
+        population: Number(updatePopulation),
+      }),
+      headers: {
+        "Content-type": "application/json",
+      },
+      method: "PUT",
+    })
+    .then((response) => response.json())
+    .then((result) => {
+      console.log(result)
+    });
+
   }
-  if (event.keyCode === 40) {
-    if (valueSum === 1) {
-      decreaseBtn.disabled = true;
-      return false;
-    } else {
-      valueSum--;
-      value.textContent = valueSum;
-      if (valueSum === 1) {
-        decreaseBtn.disabled = true;
-      }
-    }
+
+  if (updateName !== null) {
+    updatePopulation = prompt("Ange ny befolkningsmängd");
+    console.log(updatePopulation);
+
+    fetch("https://avancera.app/cities/" + getCityId, {
+      body: JSON.stringify({
+        id: getCityId,
+        name: updateName,
+        population: Number(updatePopulation),
+      }),
+      headers: {
+        "Content-type": "application/json",
+      },
+      method: "PUT",
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result)
+      })
+      .catch(error => {
+        console.log(error)
+      });
   }
-});
-
-const value = document.querySelector("#value");
-const increaseBtn = document.querySelector("#increase");
-const decreaseBtn = document.querySelector("#decrease");
-
-let valueSum = 1;
-value.textContent = valueSum;
-
-if (valueSum === 1) {
-  decreaseBtn.disabled = true;
 }
 
-increaseBtn.addEventListener("click", () => {
-  valueSum++;
-  value.textContent = valueSum;
-  if (valueSum > 1) {
-    decreaseBtn.disabled = false;
-  }
-});
-decreaseBtn.addEventListener("click", () => {
-  valueSum--;
-  value.textContent = valueSum;
-  if (valueSum === 1) {
-    decreaseBtn.disabled = true;
-  }
-});
+fetch("https://avancera.app/cities/")
+  .then((response) => response.json())
+  .then((result) => {
+    console.log(result);
+    console.log(result.id);
+  });
