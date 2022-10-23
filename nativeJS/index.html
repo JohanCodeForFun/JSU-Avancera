@@ -14,12 +14,17 @@
     <div id="quotes"></div>
     <label for="name">Namn</label>
     <input id="name" placeholder="Namn">
+    <label>
+      <input id="consent" type="checkbox">
+      Jag samtycker
+    </label>
     <input id="send" type="button" value="Skicka">
     <p id="greeting"></p>
     <div id="errors" style="color: red; display: none;">
       <p>Fel:</p>
       <ul>
-        <li>Vänligen fyll i ett namn</li>
+        <li id="name-error">Vänligen fyll i ett namn</li>
+        <li id="consent-error">Samtycke måste lämnas</li>
       </ul>
     </div>
 </body>
