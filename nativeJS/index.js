@@ -1,4 +1,5 @@
-let inputName = document.querySelector('#name').value;
-inputName = "Alice";
-
-document.querySelector('#name').value = "Alice";
+let greeting = document.querySelector('#greeting');
+let submitBtn = document.querySelector('#send');
+submitBtn.addEventListener('click', () => {
+  greeting.textContent = "Hej " + document.querySelector('#name').value + "!"
+});
