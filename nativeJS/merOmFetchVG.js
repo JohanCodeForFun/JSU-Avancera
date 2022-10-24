@@ -21,6 +21,31 @@ fetch(`https://avancera.app/cities/${id}`, {
 })
 
 
+// min anpassning på Richards lösning
+const cityId = prompt("City ID: "),
+  nameUpdate = prompt("Input name Update"),
+  populationUpdate = prompt("Update population"),
+  body = {}
+
+if (nameUpdate !== null) {
+  body.name = nameUpdate
+}
+
+if (populationUpdate !== null) {
+  body.population = Number(populationUpdate)
+}
+
+fetch(`https://avancera.app/cities/${cityId}`, {
+  body: JSON.stringify(body),
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  method: 'PATCH'
+})
+  .then(response => response.json())
+  .then(result => console.log(result))
+  .catch(error => console.log(error));
+
 // min egen
 let getCityId = prompt("Skriv in city id");
 let updateName;
