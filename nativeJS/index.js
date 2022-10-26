@@ -6,10 +6,6 @@ let checkBox = document.querySelector('input[type="checkbox"]');
 let inputError = document.querySelector('#name-error');
 let checkBoxError = document.querySelector('#consent-error');
 
-let submitFunction = () => {
-   greetingPara.textContent = `Hej ${inputField.value}!`
-}
-
 let confirmInput = () => {
   if (inputField.value === '') {
     inputError.style.display = "list-item";
@@ -35,5 +31,8 @@ let confirmInput = () => {
 divErrors.style.display = "inline";
 submitBtn.disabled = true;
 
-submitBtn.addEventListener('click', submitFunction)
 addEventListener('input', confirmInput)
+addEventListener('submit', (event) => {
+greetingPara.textContent = `Hej ${inputField.value}!`
+event.preventDefault();
+});
