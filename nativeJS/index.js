@@ -1,1 +1,1 @@
-localStorage.setItem('color', 'green');
+sessionStorage.setItem('users', JSON.stringify([{ name: 'Alice' }]));
