@@ -1,1 +1,1 @@
-sessionStorage.setItem('color', 'green');
+localStorage.setItem('color', 'green');
