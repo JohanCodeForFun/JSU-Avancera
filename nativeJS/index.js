@@ -3,9 +3,7 @@ fetch("https://avancera.app/cities/")
   .then((data) => {
     let fetchData = [];
 
-    for (let i = 0; i < data.length; i++) {
-      fetchData.push(data[i]);
-    }
+    data.forEach(item => fetchData.push(item));
 
     localStorage.setItem("cities", JSON.stringify(fetchData));
   });
