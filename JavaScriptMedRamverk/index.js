@@ -1,11 +1,8 @@
 Vue.createApp({
   data() {
     return {
-      name: "Alice",
-      number: 9000,
-      waterIsWet: true,
-      lifeOnMars: undefined,
-      sizeOfSpace: null,
+      name: ["Alice", "Bob", "Charlotte"],
+      object: { Alice: 18, Bob: 24, Charlotte: 28 },
     };
   },
 }).mount("#app");
